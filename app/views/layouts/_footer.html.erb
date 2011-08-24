@@ -1,0 +1,13 @@
+<div class="footer">
+
+	<div class="menu">
+		<ul>
+			<li><%= link_to "about", :about %></li>
+			<li><%= link_to "contact", :contact %></li>
+			<li><%= link_to "home", :home %></li>
+		</ul>
+	</div>
+
+	<%= debug(params) if Rails.env.development? %>
+
+</div>

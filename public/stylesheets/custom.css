@@ -1,0 +1,141 @@
+body {
+	background-color: #597FA1;
+	font-family: verdana;
+	letter-spacing: -.12em;
+}
+
+p {
+	font-size: 80%;
+}
+
+.round {
+	border-radius: 5px;
+}
+
+.holder {
+	width: 500px;
+	margin: auto;
+	margin-top: 100px;
+	border: 1px solid #000;
+	background-color: #FFF;
+	padding: 20px;
+}
+
+/*HEADER MENU*/
+
+.menu {
+	float: right;
+}
+
+.menu {
+	border: 1px solid #000;
+	background-color: #CCC;
+	color: #FFF;
+	padding: 5px;
+	white-space: nowrap;
+}
+
+.menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul li {
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 10px;
+	padding: 5px;
+}
+
+.menu ul li a:link {
+	color: #09c;
+	text-decoration: none;
+}
+
+.menu ul li a:hover {
+	text-decoration: underline;
+	color: red	;
+}
+
+.menu ul li a:visited {
+	color: #09c;
+}
+
+/*FOOTER MENU*/
+
+.footer .menu {
+	float: none;
+}
+
+.footer .menu {
+	border: none;
+	text-align: center;
+	background-color: #FFF;
+	white-space: nowrap;
+}
+
+.footer .menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+.footer .menu ul li {
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 10px;
+	padding: 0px;
+}
+
+.footer .menu ul li a:link {
+	color: #09c;
+	text-decoration: none;
+}
+
+.footer .menu ul li a:hover {
+	text-decoration: underline;
+	color: red	;
+}
+
+.footer .menu ul li a:visited {
+	color: #09c;
+}
+
+
+/*SIGNUP BUTTON*/
+
+a.signup_button {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+	width: 200px;
+	padding: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: green;
+	text-decoration: none;
+}
+
+a:hover.signup_button {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+	width: 200px;
+	padding: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: red;
+}
+
+.footer {
+	width: 500px;
+	margin: auto;
+	margin-top: 20px;
+	border: 1px solid #000;
+	background-color: #FFF;
+	padding: 20px;
+	float: none;
+}
