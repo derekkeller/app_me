@@ -2,18 +2,19 @@ body {
 	background-color: #597FA1;
 	font-family: verdana;
 	letter-spacing: -.12em;
+	font-size: 90%;
 }
 
 p {
-	font-size: 80%;
+
 }
 
 .round {
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 .holder {
-	width: 500px;
+	width: 600px;
 	margin: auto;
 	margin-top: 100px;
 	border: 1px solid #000;
@@ -28,8 +29,8 @@ p {
 }
 
 .menu {
-	border: 1px solid #000;
-	background-color: #CCC;
+	border: 1px solid #8ED1CA;
+	background-color: #E6FAF8;
 	color: #FFF;
 	padding: 5px;
 	white-space: nowrap;
@@ -101,7 +102,18 @@ p {
 }
 
 
-/*SIGNUP BUTTON*/
+/*SIGNUP PAGE & BUTTON*/
+
+.field {
+	padding: 5px;
+/*	background: red;*/
+	margin-top: 5px;
+}
+
+.actions {
+/*	background: blue;*/
+	margin-top: 5px;
+}
 
 a.signup_button {
 	margin-left: auto;
@@ -131,11 +143,89 @@ a:hover.signup_button {
 }
 
 .footer {
-	width: 500px;
+	width: 600px;
 	margin: auto;
 	margin-top: 20px;
-	border: 1px solid #000;
+	border: 1px solid #8ED1CA;
 	background-color: #FFF;
 	padding: 20px;
 	float: none;
 }
+
+/* USER SHOW PAGE  */
+
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 60%;
+  padding: 1em;
+	border: 1px solid #8ED1CA;
+}
+
+td.sidebar {
+  width: 40%;
+  padding: 1em;
+  vertical-align: top;
+  background: #D9DBF8;
+	border: 1px solid #8ED1CA;
+}
+
+/* ERROR MESSAGES*/
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: #D66060;
+  display: table;
+}
+
+.field_with_errors label {
+  color: #fff;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid #D66060;
+	border-radius: 5px;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #E0BCBC;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #D66060;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* FLASH MESSAGES*/
+
+.flash {
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+.success {
+	border: 1px solid #C0CEC2;
+	background-color: #EDF5EE;
+}
+
+.failure

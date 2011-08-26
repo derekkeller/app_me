@@ -10,8 +10,11 @@
 
 <div class="holder">
 
-		<%= alert %>
-		<%= notice %>
+	<% if flash.any? %>
+	  <% flash.each do |key, value| %>
+	    <div class="flash <%= key %>"><%= value %></div>
+	  <% end %>
+	<% end %>
 
 		<%= render 'layouts/header' %>
 
