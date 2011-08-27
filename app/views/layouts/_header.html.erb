@@ -4,7 +4,7 @@
 	<div class="menu round">
 		<ul>
 			<% if current_user %>
-				<li><%= link_to "profile", current_user	 %></li>
+				<li><%= link_to "Welcome #{current_user.name}!", current_user	%></li>
 				<li><%= link_to "logout", :logout %></li>
 			<% else %>
 				<li><%= link_to "login", new_session_path %></li>
