@@ -162,14 +162,13 @@ table.profile {
 td.main {
   width: 60%;
   padding: 1em;
-	border: 1px solid #8ED1CA;
 }
 
 td.sidebar {
   width: 40%;
   padding: 1em;
   vertical-align: top;
-  background: #D9DBF8;
+  background: #FFF5C2;
 	border: 1px solid #8ED1CA;
 }
 
@@ -228,4 +227,7 @@ td.sidebar {
 	background-color: #EDF5EE;
 }
 
-.failure
+.failure {
+	border: 1px solid #D66060;
+	background-color: #E0BCBC;
+}

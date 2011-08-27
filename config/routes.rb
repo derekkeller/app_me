@@ -1,15 +1,15 @@
 SampleApp::Application.routes.draw do
-
-  get "sessions/new"
-
   root :to => "pages#home"
 
   get "home" => "pages#home", :as => :home
   get "contact" => "pages#contact", :as => :contact
   get "about" => "pages#about", :as => :about
   get "signup" => "users#new", :as => :signup
+  get "login" => "sessions#new", :as => :login
+  get "logout" => "sessions#destroy", :as => :logout
 
   resources :users
+  resources :sessions
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

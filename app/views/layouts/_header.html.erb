@@ -1,12 +1,15 @@
 <header>
-	<%= image_tag("logo.png", :class => "round") %>
+	<%= image_tag("logo.png", :class => "round", :size => "170x40") %>
 
 	<div class="menu round">
 		<ul>
-			<li><%= link_to "about", :about %></li>
-			<li><%= link_to "contact", :contact %></li>
-			<li><%= link_to "home", :home %></li>
-			<li><%= link_to "signup", :signup %></li>
+			<% if current_user %>
+				<li><%= link_to "profile", current_user	 %></li>
+				<li><%= link_to "logout", :logout %></li>
+			<% else %>
+				<li><%= link_to "login", new_session_path %></li>
+				<li><%= link_to "signup", :signup %></li>
+			<% end %>
 		</ul>
 	</div>
 </header>
