@@ -6,10 +6,11 @@ class SessionsController < ApplicationController
 
   def create
     user = User.authenticate(params[:session][:email], params[:session][:password])
+
     if user
       sign_in user
       flash[:success] = "Logged in!"
-      redirect_to user
+      redirect_back_or user
     else
       flash.now[:failure] = "Invalid email/password combination."
       @title = "Login"

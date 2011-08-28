@@ -231,3 +231,33 @@ td.sidebar {
 	border: 1px solid #D66060;
 	background-color: #E0BCBC;
 }
+
+.notice {
+	border: 1px solid #EBC35E;
+	background-color: #EBE4C4;
+}
+
+ul.users {
+	padding: 0;
+	margin: 0;
+}
+
+ul.users li {
+	margin-top: 1em;
+	list-style: none;
+}
+
+ul.users li a:link {
+	text-decoration: none;
+	color: #09c;
+}
+
+ul.users li a:hover {
+	text-decoration: underline;
+	color: #09c;
+}
+
+ul.users li a:visited {
+	text-decoration: none;
+	color: #09c;
+}

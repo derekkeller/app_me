@@ -5,7 +5,8 @@
 		</td>
 		<td class="sidebar round">
 			<strong>Name</strong> <%= @user.email %></h3><br />
-			<strong>URL</strong> <%= link_to user_path(@user), @user %>
+			<strong>URL</strong> <%= link_to user_path(@user), @user %><br />
+			<%= link_to 'Edit', edit_user_path(@user) %>
 		</td>
 	</tr>
 </table>
