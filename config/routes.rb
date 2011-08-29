@@ -9,7 +9,8 @@ SampleApp::Application.routes.draw do
   get "logout" => "sessions#destroy", :as => :logout
 
   resources :users
-  resources :sessions
+  resources :sessions,   :only => [:new, :create, :destroy]
+  resources :microposts, :only => [:create, :destroy]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

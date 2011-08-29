@@ -2,6 +2,8 @@ class User < ActiveRecord::Base
   attr_accessor :password
   attr_accessible :name, :email, :password, :admin
   before_save :encrypt_password
+
+  has_many :microposts
   
   validates :name, :presence => true
   validates :email, :presence => true
