@@ -5,6 +5,7 @@
 			<td class="main">
 				<h1 class="micropost">What's up?</h1>
 				<%= render 'shared/micropost_form' %>
+				<%= render 'shared/feed' %>
 			</td>
 			<td class="sidebar round">
 				<%= render 'shared/user_info' %>
@@ -14,10 +15,10 @@
 
 <% else %>
 
-<h1>Welcome!</h1>
+	<h1>Welcome!</h1>
 
-<p>This is a great app, click below to sign up and get started!</p>
+	<p>This is a great app, click below to sign up and get started!</p>
 
-<%= link_to "Sign Up", :signup, :class => "signup_button round" %>
+	<%= link_to "Sign Up", :signup, :class => "signup_button round" %>
 
 <% end %>
