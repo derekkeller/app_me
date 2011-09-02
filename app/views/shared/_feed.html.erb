@@ -1,4 +1,4 @@
-<% if @feed_items.any? %>
+<% unless @feed_items.any? %>
 	<table>
 		<%= render :partial => 'shared/feed_item', :collection => @feed_items %>
 	</table>

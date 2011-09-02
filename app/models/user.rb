@@ -3,7 +3,11 @@ class User < ActiveRecord::Base
   attr_accessible :name, :email, :password, :admin
   before_save :encrypt_password
 
-  has_many :microposts
+  has_many :microposts,     :dependent => :destroy
+  has_many :relationships,  :dependent => :destroy,
+                            :foreign_key => "follower_id"
+
+  has_many :following, :through => :relationships, :source => :followed
   
   validates :name, :presence => true
   validates :email, :presence => true
